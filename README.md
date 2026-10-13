@@ -67,14 +67,33 @@ refuses to.
 
 ## Install
 
+**skills CLI** — installs into the current project, or `-g` for your user account:
+
 ```bash
-git clone git@github.com:alramdein/seq-diagram-skill.git
-mkdir -p <your-repo>/.claude/skills/seq-diagram
-cp seq-diagram-skill/SKILL.md <your-repo>/.claude/skills/seq-diagram/
+npx skills add alramdein/seq-diagram-skill --skill seq-diagram
 ```
 
-Project-level so the repo's other contributors get it on clone. Use
-`~/.claude/skills/seq-diagram/` instead if you want it everywhere.
+**Claude Code plugin:**
+
+```
+/plugin marketplace add alramdein/seq-diagram-skill
+/plugin install seq-diagram@seq-diagram-skill
+```
+
+**By hand** — it is one markdown file, so copying it works too:
+
+```bash
+git clone https://github.com/alramdein/seq-diagram-skill.git
+mkdir -p <your-repo>/.claude/skills/seq-diagram
+cp seq-diagram-skill/skills/seq-diagram/SKILL.md <your-repo>/.claude/skills/seq-diagram/
+```
+
+Project-level (`.claude/skills/`) means the repo's other contributors get it on clone,
+which is usually what you want for a skill that writes docs into that repo. Use
+`~/.claude/skills/` for every project on your machine.
+
+Claude Code reads skills at startup — run `/reload-plugins` or restart the session
+after installing.
 
 ## Usage
 

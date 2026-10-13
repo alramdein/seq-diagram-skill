@@ -1,0 +1,19 @@
+{
+  "name": "seq-diagram",
+  "description": "Mermaid sequence diagrams of business flows, anchored to file:line citations and a git SHA so regeneration reads a diff instead of re-tracing the repo",
+  "version": "0.1.0",
+  "author": {
+    "name": "alramdein",
+    "url": "https://github.com/alramdein"
+  },
+  "homepage": "https://github.com/alramdein/seq-diagram-skill",
+  "repository": "https://github.com/alramdein/seq-diagram-skill",
+  "license": "MIT",
+  "keywords": [
+    "mermaid",
+    "sequence-diagram",
+    "documentation",
+    "architecture",
+    "onboarding"
+  ]
+}

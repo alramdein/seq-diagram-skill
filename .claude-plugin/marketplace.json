@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "seq-diagram-skill",
+  "owner": {
+    "name": "alramdein",
+    "url": "https://github.com/alramdein"
+  },
+  "description": "Install seq-diagram as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "seq-diagram",
+      "source": "./",
+      "description": "Mermaid sequence diagrams of business flows, anchored to file:line citations and a git SHA so regeneration reads a diff instead of re-tracing the repo.",
+      "license": "MIT",
+      "keywords": [
+        "mermaid",
+        "sequence-diagram",
+        "documentation",
+        "architecture",
+        "onboarding"
+      ]
+    }
+  ]
+}
